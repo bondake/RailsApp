@@ -14213,3 +14213,61 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 3812)
 
 
+Started GET "/" for ::1 at 2022-03-02 16:30:52 +0900
+Processing by HomeController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.2ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 3346)
+Completed 200 OK in 52ms (Views: 43.9ms | Allocations: 3690)
+
+
+Started GET "/posts/index" for ::1 at 2022-03-02 16:31:00 +0900
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 602)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 3932)
+Completed 200 OK in 72ms (Views: 52.7ms | ActiveRecord: 1.3ms | Allocations: 4847)
+
+
+Started GET "/menu" for ::1 at 2022-03-02 16:31:02 +0900
+Processing by MenuController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menu/top.html.erb within layouts/application
+  Rendered menu/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 3341)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+Started GET "/signup" for ::1 at 2022-03-02 16:31:03 +0900
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 307)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 3466)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms | Allocations: 3829)
+
+
+Started GET "/login" for ::1 at 2022-03-02 16:31:04 +0900
+Processing by UsersController#login_form as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.1ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 3421)
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 3768)
+
+
+Started GET "/" for ::1 at 2022-03-02 16:31:06 +0900
+Processing by HomeController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 3341)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
